@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(48, 47, 47);
+
+}
+
+#calcTemp {
+  padding: 20px 30px;
+  border-radius: 10px;
+  min-height: 380px;
+  /* background-color: rgb(120, 122, 122); */
+  background-image: linear-gradient(rgb(48, 47, 47), rgb(120, 122, 122),rgb(48, 47, 47));
+  box-shadow: 0.1px 0.1px 12px 0.1px #888888
+}
+
+label {
+  font-size: 30px;
+  line-height: 78px;
+}
+
+#temp {
+  width: 150px;
+  height: 34px;
+  border-radius: 10px;
+  margin: 12px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 6px 1px #888888
+
+}
+
+#temp_diff {
+  width: 120px;
+  height: 34px;
+  border-radius: 8px;
+  margin: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+#submit {
+  width: 100px;
+  border-radius: 5px;
+  margin: 30px 0 20px 0;
+  font-size: 18px;
+  background-color: gray;
+  padding: 5px;
+  transition: all 0.5s ease;
+}
+
+#submit:hover {
+  background-color: rgb(109, 13, 13);
+  cursor: pointer;
+  color: white;
+}
+
+#result {
+  height: 20px;
+  width: 110px;
+  color: rgb(15, 15, 14);
+  border-radius: 10px;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+
+/*------------media queries---------*/
+@media only screen and (max-width: 400px){
+    .container{
+        width: 100vh auto;
+      }
+    }
